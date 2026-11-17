@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WoodCraft Studio - Custom Sofas, Cabinets & Curtains</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">WoodCraft<span>Studio</span></a>
+            <nav class="nav-links" id="navLinks">
+                <a href="#home">Home</a>
+                <a href="#services">Services</a>
+                <a href="#gallery">Our Work</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu">&#9776;</button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h1>Handcrafted Furniture &amp; Home Decor</h1>
+            <p>Bespoke Sofas, Modular Cabinets, and Custom Curtains tailored to bring warmth and elegance to your home.</p>
+            <div class="hero-buttons">
+                <a href="#gallery" class="btn btn-primary">Explore Designs</a>
+                <button class="btn btn-secondary" id="heroQuoteBtn">Book Free Measurement</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2>What We Craft</h2>
+                <p>Precision woodwork and fine upholstery built with durable materials.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">&#128715;</div>
+                    <h3>Custom Sofas</h3>
+                    <p>L-shaped, 3-seater, and wooden frame sofas made with high-density foam and premium fabrics.</p>
+                    <button class="btn-text service-inquire" data-service="Custom Sofa">Get Estimate &rarr;</button>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">&#128452;</div>
+                    <h3>Wooden Cabinets</h3>
+                    <p>Kitchen cabinets, wardrobes, TV units, and storage solutions crafted from seasoned teak and plywood.</p>
+                    <button class="btn-text service-inquire" data-service="Wooden Cabinets">Get Estimate &rarr;</button>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">&#129695;</div>
+                    <h3>Designer Curtains</h3>
+                    <p>Window curtains, blackout drapes, and custom wooden curtain rods fitted perfectly to your space.</p>
+                    <button class="btn-text service-inquire" data-service="Designer Curtains">Get Estimate &rarr;</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio / Filterable Gallery -->
+    <section id="gallery" class="gallery section-padding bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Recent Work</h2>
+                <p>Filter through our custom-built sofas, cabinets, and curtain installations.</p>
+            </div>
+
+            <!-- Filter Buttons -->
+            <div class="filter-buttons" id="filterButtons">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="sofa">Sofas</button>
+                <button class="filter-btn" data-filter="cabinet">Cabinets</button>
+                <button class="filter-btn" data-filter="curtain">Curtains</button>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="gallery-grid" id="galleryGrid">
+                <!-- Sofa 1 -->
+                <div class="gallery-item" data-category="sofa">
+                    <div class="item-visual sofa-bg-1">
+                        <span class="badge">Sofa</span>
+                    </div>
+                    <div class="item-info">
+                        <h3>Royal Teak 5-Seater Sofa</h3>
+                        <p>Solid teakwood frame with stain-resistant velvet upholstery.</p>
+                        <button class="btn btn-outline order-btn" data-item="Royal Teak 5-Seater Sofa">Inquire Now</button>
+                    </div>
+                </div>
+
+                <!-- Cabinet 1 -->
+                <div class="gallery-item" data-category="cabinet">
+                    <div class="item-visual cabinet-bg-1">
+                        <span class="badge">Cabinet</span>
+                    </div>
+                    <div class="item-info">
+                        <h3>Modern Kitchen Cabinets</h3>
+                        <p>Marine-grade plywood with soft-close hinges and matte finish.</p>
+                        <button class="btn btn-outline order-btn" data-item="Modern Kitchen Cabinets">Inquire Now</button>
+                    </div>
+                </div>
+
+                <!-- Curtain 1 -->
+                <div class="gallery-item" data-category="curtain">
+                    <div class="item-visual curtain-bg-1">
+                        <span class="badge">Curtains</span>
+                    </div>
+                    <div class="item-info">
+                        <h3>Linen Sheer &amp; Blackout Set</h3>
+                        <p>Double-layered living room curtains with carved wooden pelmet.</p>
+                        <button class="btn btn-outline order-btn" data-item="Linen Sheer & Blackout Set">Inquire Now</button>
+                    </div>
+                </div>
+
+                <!-- Sofa 2 -->
+                <div class="gallery-item" data-category="sofa">
+                    <div class="item-visual sofa-bg-2">
+                        <span class="badge">Sofa</span>
+                    </div>
+                    <div class="item-info">
+                        <h3>Compact L-Shape Lounger</h3>
+                        <p>Space-saving corner sofa with hidden under-seat storage.</p>
+                        <button class="btn btn-outline order-btn" data-item="Compact L-Shape Lounger">Inquire Now</button>
+                    </div>
+                </div>
+
+                <!-- Cabinet 2 -->
+                <div class="gallery-item" data-category="cabinet">
+                    <div class="item-visual cabinet-bg-2">
+                        <span class="badge">Cabinet</span>
+                    </div>
+                    <div class="item-info">
+                        <h3>Sliding Door Wardrobe</h3>
+                        <p>Floor-to-ceiling bedroom wardrobe with mirror &amp; walnut veneer.</p>
+                        <button class="btn btn-outline order-btn" data-item="Sliding Door Wardrobe">Inquire Now</button>
+                    </div>
+                </div>
+
+                <!-- Curtain 2 -->
+                <div class="gallery-item" data-category="curtain">
+                    <div class="item-visual curtain-bg-2">
+                        <span class="badge">Curtains</span>
+                    </div>
+                    <div class="item-info">
+                        <h3>Bedroom Velvet Drapes</h3>
+                        <p>Thermal-insulated heavy drapes with brass-finished wooden rods.</p>
+                        <button class="btn btn-outline order-btn" data-item="Bedroom Velvet Drapes">Inquire Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section-padding">
+        <div class="container about-container">
+            <div class="about-text">
+                <h2>Why Choose Our Workshop?</h2>
+                <p>We are a dedicated local carpentry workshop committed to honest craftsmanship. Unlike mass-produced furniture, every sofa frame, cabinet door, and curtain rod is measured and built specifically for your rooms.</p>
+                <ul class="features-list">
+                    <li>&#10003; 100% Seasoned Hardwood &amp; Termite-Resistant Plywood</li>
+                    <li>&#10003; Free Home Visit for Measurements &amp; Fabric Samples</li>
+                    <li>&#10003; Transparent Pricing with On-Time Delivery</li>
+                </ul>
+            </div>
+            <div class="about-stats">
+                <div class="stat-box">
+                    <span class="stat-number">12+</span>
+                    <span class="stat-label">Years Experience</span>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-number">450+</span>
+                    <span class="stat-label">Happy Homes</span>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-number">5 Yr</span>
+                    <span class="stat-label">Craft Warranty</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section-padding bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>Request a Free Quote</h2>
+                <p>Tell us what you need, and our master carpenter will call you back.</p>
+            </div>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h3>Visit Our Workshop</h3>
+                    <p><strong>Address:</strong> Plot 14, Timber Market Road, Furniture Lane</p>
+                    <p><strong>Phone:</strong> +91 98765 43210</p>
+                    <p><strong>Hours:</strong> Mon - Sat: 9:30 AM - 7:30 PM</p>
+                    <button class="btn btn-whatsapp" id="whatsappBtn">Chat on WhatsApp</button>
+                </div>
+
+                <form class="contact-form" id="quoteForm">
+                    <div class="form-group">
+                        <label for="customerName">Your Name</label>
+                        <input type="text" id="customerName" placeholder="Enter your full name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="customerPhone">Phone Number</label>
+                        <input type="tel" id="customerPhone" placeholder="Enter your mobile number" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="serviceType">What do you want to make?</label>
+                        <select id="serviceType">
+                            <option value="Custom Sofa">Custom Sofa</option>
+                            <option value="Wooden Cabinets">Wooden Cabinets / Wardrobe</option>
+                            <option value="Designer Curtains">Designer Curtains &amp; Rods</option>
+                            <option value="Full Home Woodwork">Complete Home Package</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="customerMessage">Details / Approximate Size</label>
+                        <textarea id="customerMessage" rows="3" placeholder="e.g., 5-seater L-shape sofa or 6ft wardrobe..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Send Inquiry</button>
+                    <p id="formFeedback" class="form-feedback"></p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 WoodCraft Studio. Handcrafted Sofas, Cabinets &amp; Curtains.</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" title="Go to top">&uarr;</button>
+
+    <!-- Quick Inquiry Modal -->
+    <div id="quoteModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" id="closeModal">&times;</span>
+            <h3>Quick Quote Request</h3>
+            <p id="modalItemTitle" class="modal-subtitle">Item: Custom Furniture</p>
+            <form id="modalForm">
+                <div class="form-group">
+                    <input type="text" id="modalName" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" id="modalPhone" placeholder="Your Phone Number" required>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Request Callback</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
